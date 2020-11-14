@@ -1,5 +1,4 @@
-import unittest
-
+# Global assumption: element will always be a list unless explicitly said the opposite
 
 # Return the smallest element within elements
 def get_smallest(elements):
@@ -24,13 +23,7 @@ def find_target_positions(elements, target):
 
 # Return a list containing the :result_length smallest elements within elements.
 # the result list must be in natural order
+# if :result_length is a negative number raise ValueError
+# if :result_length is larger than the list, then consider it as elements length.
 def get_smallest_list(elements, result_length):
     pass
-
-#########
-# TESTS #
-#########
-
-class TestGetSmallest:
-
-    def test_empty(self):
